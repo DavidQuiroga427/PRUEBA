@@ -1,2 +1,0 @@
-# PRUEBA
-Prueba de GitHub
