@@ -2,9 +2,9 @@ CREATE DATABASE IF NOT EXISTS imdb;
 USE imdb;
 
 CREATE TABLE film(
-    film_id INT(11) NOT NULL AUTO_INCREMENT, 
-    title VARCHAR(40) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+    film_id BIGINT() NOT NULL AUTO_INCREMENT, 
+    title VARCHAR(20) NOT NULL,
+    description VARCHAR(50) NOT NULL,
     release_year YEAR NOT NULL,
     CONSTRAINT film_pk PRIMARY KEY (film_id) 
 )ENGINE = InnoDB;  
