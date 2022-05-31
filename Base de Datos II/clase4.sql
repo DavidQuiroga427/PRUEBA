@@ -1,7 +1,7 @@
 -- Actividad 1
-SELECT f.title, f.special_features 
-FROM film f
-WHERE f.rating LIKE "%PG-13%";
+SELECT a.title, a.special_features 
+FROM film a
+WHERE a.rating LIKE "%PG-13%";
 
 -- Actividad 2
 SELECT length 
@@ -16,9 +16,9 @@ WHERE replacement_cost BETWEEN 20.00 AND 24.00;
 -- Actividad 4
 
 SELECT f.title, c.name AS 'category', f.rating 
-FROM film f, film_category fc, category c
-WHERE f.film_id = fc.film_id 
-    AND fc.category_id = c.category_id
+FROM film f, film_category fi, category c
+WHERE f.film_id = fi.film_id 
+    AND fi.category_id = c.category_id
     AND f.special_features LIKE '%Behind the Scenes%';
 
 -- Actividad 5
