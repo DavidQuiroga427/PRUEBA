@@ -72,7 +72,7 @@ DELIMITER ;
 
 set @list = '';
 
-CALL list_procedure('Uruguay',@list);
+CALL list_procedure('Estados Unidos',@list);
 
 SELECT @list;
 
